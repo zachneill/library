@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+
+    <title>ALL GUIDES - Library Homepage for Hutchins Library</title>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark berea-color navbar-text position-relative p-0 m-0" id="bc-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://libraryguides.berea.edu/">
+            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/hutchins_library_white_183x50.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-2">
+                    <a class="nav-link link-light" aria-current="page" href="/digitalinitiatives">Digital
+                        Initiatives</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link link-light" href="/edtech">Ed Tech</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link link-light" href="/oer">Open Berea</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link link-light" href="/archives">Special Collections &amp; Archives</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link link-light" href="/AboutLibraryServices">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- END HEADER -->
+
+<!-- CONTENT -->
+
+<div id="library-image" class="pt-5 overflow-hidden">
+    <div id="s-lg-guide-header" class="my-4 mx-2">
+        <div class="d-flex justify-content-center row">
+            <div class="col col-md-8">
+
+                <!-- SEARCH BOX -->
+
+                <div id="discovery-search-box">
+                    <div class="d-flex text-center">
+                        <span class="material-tab active-tab"
+                              data-facets="[{&quot;key&quot;:&quot;format&quot;,&quot;value&quot;:&quot;all&quot;}]"
+                              tabindex="0"><i class="fa fa-university me-1"></i>Everything
+                        </span>
+                        <span
+                            class="material-tab"
+                            data-facets="[{&quot;key&quot;:&quot;subformat&quot;,&quot;value&quot;:&quot;Artchap::artchap_artcl&quot;}]"
+                            tabindex="0"><i class="fa fa-file-text-o me-1"></i>Articles
+                        </span>
+                        <span
+                            class="material-tab"
+                            data-facets="[{&quot;key&quot;:&quot;format&quot;,&quot;value&quot;:&quot;Book&quot;}]"
+                            tabindex="0"><i class="fa fa-book me-1"></i>Books
+                        </span>
+                        <span
+                            class="material-tab"
+                            data-facets="[{&quot;key&quot;:&quot;format&quot;,&quot;value&quot;:&quot;Video&quot;},{&quot;key&quot;:&quot;format&quot;,&quot;value&quot;:&quot;Music&quot;}]"
+                            tabindex="0"><i class="fa fa-music me-1"></i>Music &amp; Videos
+                        </span>
+                        <span
+                            class="material-tab"
+                            data-facets="[{&quot;key&quot;:&quot;format&quot;,&quot;value&quot;:&quot;Jrnl&quot;}]"
+                            tabindex="0"><i class="fa fa-files-o me-1"></i>Journals
+                        </span>
+                    </div>
+                    <form id="discovery-search-form">
+                        <label for="discovery-search" class="mb-2" style="font-size: 1.3em">
+                            Search the Library Resources
+                        </label>
+                        <div class="d-flex w-100">
+                            <div class="d-flex flex-grow-1">
+                                <div class="me-0" id="discovery-index-container">
+                                    <select id="discovery-search-select">
+                                        <option value="kw" aria-selected="true" selected>Keyword</option>
+                                        <option value="au">Author</option>
+                                        <option value="su">Subject</option>
+                                        <option value="ti">Title</option>
+                                    </select>
+                                </div>
+                                <input type="text" id="discovery-search" required="" autocomplete="off">
+                            </div>
+                            <div>
+                                <input type="submit" value="Search" style="padding: 0.75em 1.5em; font-size: 1em; width: auto; height: 3em; min-width: 8em; color: rgb(255, 255, 255); background-color: rgb(0, 90, 139); margin: 0px 0px 0px 0.5em; border-radius: 0.25em; border: medium none; background-image: none; float: none; text-align: center;">
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <p style="flex-basis: 100%; font-size: 0.9em; text-align: left;">
+                                <a id="discovery-patron-login" href=https://bereacollege.account.worldcat.org/account/"
+                                   style="text-decoration:
+                                underline; color: rgb(51, 51, 51);" target="_blank">
+                                    Login To My Account
+                                </a>
+                            </p>
+
+                            <p style="flex-basis: 100%; font-size: 0.9em; text-align: right;">
+                                <a id="discovery-advanced-search" href=https://bereacollege.on.worldcat.org/advancedsearch
+                                    style="text-decoration: underline; color: rgb(51, 51, 51);" target="_blank">
+                                    Advanced Search
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+
+                    <!-- END SEARCH BOX -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HELP BOX -->
+
+    <div class="d-flex row justify-content-evenly fw-bold">
+        <div class="card col-md-4 col-lg-3 col-xl-2 col-sm-6 my-2 h-50 transp-bg">
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://libapps.s3.amazonaws.com/accounts/732/images/addressbook.png">
+                        </span>
+                        <a href="https://libraryguides.berea.edu/directory">Contact Us</a>
+                    </li>
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/envelop.png">
+                        </span>
+                        <a href="https://libraryanswers.berea.edu/ask">Email Us</a>
+                    </li>
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/phone4.png">
+                        </span>
+                        Tel: 859-985-3364
+                    </li>
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/bubble2.png">
+                        </span>
+                        Txt: 859-212-6621
+                    </li>
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/thumbs-up2.png" alt="Facebook">
+                        </span>
+                        <a href="https://www.facebook.com/hutchinslibrary">Like Us on Facebook</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card col-md-3 col-sm-4 h-50 my-2 transp-bg">
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/calendar4.png" alt="Schedule appointment">
+                        </span>
+                        <a href="https://berea.libcal.com/appointments?lid=2441">Schedule an Appointment</a>
+                    </li>
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/compass2_32.png">
+                        </span>
+                        <a href="https://libraryguides.berea.edu/researchguides">Research Guides</a>
+                    </li>
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://libapps.s3.amazonaws.com/accounts/732/images/computer-4-32.jpg">
+                        </span>
+                        <a href="https://berea.libwizard.com/f/AsynchronousInstructionModuleRequestForm">Request Instruction Module</a>
+                    </li>
+                    <li class="list-group-item no-bg">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/bullhorn.png" alt="Library News">
+                        </span>
+                        <a href="https://libraryguides.berea.edu/blog">Library News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- END HELP BOX -->
+
+        <!-- HOURS BOX -->
+
+        <div class="my-2 card col-lg-3 col-md-4 col-sm-6 h-50 transp-bg">
+            <h5 class="card-header text-center">Today's Hours &amp; Events</h5>
+            <div class="card-body">
+                <div class="d-flex justify-content-center" id="api_hours_today_iid1217_lid0"></div>
+                <br>
+                <div class="d-flex justify-content-evenly">
+                    <p class="float-end">
+                        <span>
+                            <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/clock.png">
+                        </span>
+                        <a href="https://libraryguides.berea.edu/libraryhours/calenddarofhours">Weekly Hours</a>
+                    </p>
+                    <p class="float-end">
+                        <img src="https://s3.amazonaws.com/libapps/accounts/26112/images/calendar2.png">
+                        <a href="https://libraryguides.berea.edu/libraryhours/calenderofevents">Library Events</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- END HOURS BOX -->
+
+    </div>
+
+    <!-- END CONTENT-->
+
+    <!-- FOOTER -->
+
+    <div class="position-relative fixed-bottom mt-2" id="bc-footer">
+        <div class="berea-color footer-header px-2 d-flex">
+            <footer class="row pt-3 mt-3 border-top m-auto">
+                <div class="col">
+                    <h5>Research Assistance</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/researchguides" class="nav-link p-0 link-light">
+                                Guides by Subject
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://berea.libcal.com/appointments?lid=2441" class="nav-link p-0 link-light">
+                                Research Appt.
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryanswers.berea.edu/search/" class="nav-link p-0 link-light">
+                                Ask Us
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/writingciting" class="nav-link p-0 link-light">
+                                Writing &amp; Citing
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://berea.libwizard.com/f/report_a_technical_problem" class="nav-link p-0 link-light">
+                                Report an Issue
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Resources</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://bereacollege.on.worldcat.org/discovery"
+                                                     class="nav-link p-0 link-light">Library Catalog</a></li>
+                        <li class="nav-item mb-2"><a href="https://libraryguides.berea.edu/az.php"
+                                                     class="nav-link p-0 link-light">Electronic Resources</a>
+                        </li>
+                        <li class="nav-item mb-2"><a
+                                href="https://berea.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=pfi"
+                                class="nav-link p-0 link-light">Journals Available</a></li>
+                        <li class="nav-item mb-2"><a
+                                href="https://berea.libwizard.com/f/Student_Labor_Application_Hutchins_Library"
+                                class="nav-link p-0 link-light">Library Labor Application</a></li>
+                        <li class="nav-item mb-2"><a href="https://libraryguides.berea.edu/bereapediaguides"
+                                                     class="nav-link p-0 link-light">BEREApedia</a></li>
+                        <li class="nav-item mb-2"><a href="https://libraryguides.berea.edu/yearbooks"
+                                                     class="nav-link p-0 link-light">Chimes Yearbooks</a></li>
+                        <li class="nav-item mb-2"><a href="https://libraryguides.berea.edu/SJB"
+                                                     class="nav-link p-0 link-light">Saint John's Bible</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/libraryservices/students" class="nav-link p-0 link-light">
+                                For Students
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/libraryservices/facultystaff" class="nav-link p-0 link-light">
+                                For Faculty &amp; Staff
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/libraryservices/townpatrons" class="nav-link p-0 link-light">
+                                For Berea Community
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/purchaserequestform2" class="nav-link p-0 link-light">
+                                Purchase Request
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/interlibraryloan" class="nav-link p-0 link-light">
+                                Interlibrary Loan
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://libraryguides.berea.edu/instructionalservices" class="nav-link p-0 link-light">
+                                Library Instruction
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://bereacollege.account.worldcat.org/account/checkouts" class="nav-link p-0 link-light">
+                                Renew Materials
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Berea College</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.berea.edu/admissions/directions/"
+                                                     class="nav-link p-0 link-light">Directions</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.berea.edu/campus-map/"
+                                                     class="nav-link p-0 link-light">Campus Map</a></li>
+                        <li class="nav-item mb-2"><a
+                                href="https://community.berea.edu/calendar/main.php?calendarid=default"
+                                class="nav-link p-0 link-light">Calendar</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.berea.edu/convocations/"
+                                                     class="nav-link p-0 link-light">Convocations</a></li>
+                        <li class="nav-item mb-2"><a href="https://bcnow.berea.edu/"
+                                                     class="nav-link p-0 link-light">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="col d-none d-md-flex">
+                    <a target="_blank" title="Berea College Home" href="https://www.berea.edu"> <img
+                            src="https://s3.amazonaws.com/libapps/accounts/26112/images/primary_white_transparent_150x143.png"
+                            style="width:150px;height:143px">
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <div class="text-center berea-color">
+            <a class="footer-text" href="https://www.berea.edu/legal-information/copyright-policy/">© 2023 Berea College</a>
+             | <a class="footer-text" href="https://berea.libapps.com/libapps/login.php">Libapps Login</a>
+             | <a class="footer-text" href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a>
+             | <a class="footer-text" href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a>
+             | <a class="footer-text" href="https://www.berea.edu/cisrk/">Consumer Info &amp; Student Right-to-Know</a>
+             | <a class="footer-text">859.985.3000</a>
+             | <a class="footer-text " href="https://maps.google.com/maps?q=berea+college&hl=en&ll=37.575093,
+            -84.29183&spn=0.028129,0.030341&sll=37.594407,-84.286214&sspn=0.22497,0.242729&hq=berea+college&t=m&z=15">
+                Berea, KY 40404
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="libchat_42fb678e1d5296316aaadab741519e0b"></div>
+
+
+<!-- END FOOTER -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+</script>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://libraryanswers.berea.edu/load_chat.php?hash=42fb678e1d5296316aaadab741519e0b">
+</script>
+<script src="https://api3.libcal.com/api_hours_today.php?iid=1217&lid=0&format=js&context=object"></script>
+
+<script src="custom.js"></script>
+</body>
+</html>
