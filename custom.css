@@ -126,10 +126,13 @@ a:active { text-decoration: none; }
 }
 
 #bc-footer {
-    z-index: 1
+    z-index: 1;
 }
 #bc-navbar {
     z-index: 1;
+    margin: 0;
+    padding: 0;
+    background-color: #005A8B;
 }
 select::-ms-expand {
     display: none
